@@ -1,0 +1,57 @@
+Experiment No.: 3
+Aim: Write a Program to Implement Manchester Encoding Technique
+Objectives
+After completing this experiment, students will be able to:
+● Understand the concept of Manchester Encoding.
+● Implement Manchester Encoding using Python.
+● Convert binary input into Manchester encoded output.
+● Verify the encoded data for correctness.
+Theory
+Manchester Encoding is a digital line coding technique used in computer networks to transmit
+binary data over communication channels. It combines clock information and data information
+into a single signal, allowing the receiver to stay synchronized with the sender without requiring
+a separate clock signal.
+Unlike NRZ (Non-Return-to-Zero) encoding, Manchester Encoding guarantees at least one
+voltage transition in the middle of every bit period. This transition enables reliable clock
+recovery and reduces synchronization errors during data transmission.
+Manchester Encoding is widely used in:
+● Ethernet (IEEE 802.3)
+● RFID systems
+● NFC (Near Field Communication)
+● Data communication systems
+● Digital electronics
+Working Principle
+In Manchester Encoding, every bit contains a transition at the center of the bit interval.
+According to the IEEE 802.3 standard:
+● Bit 0 → High to Low transition (represented as 10)
+● Bit 1 → Low to High transition (represented as 01)
+Algorithm
+1. Start the program.
+12. Accept a binary string from the user.
+3. Initialize an empty string for the encoded output.
+4. Read each bit of the input:
+o If the bit is 0, append 10.
+o If the bit is 1, append 01.
+o Otherwise, display an error message.
+5. Display the Manchester encoded string.
+6. End the program.
+# Manchester Encoding Program
+binary_data = input("Enter Binary Data: ")
+encoded_data = ""
+for bit in binary_data:
+ if bit == '0':
+ encoded_data += "10"
+ elif bit == '1':
+ encoded_data += "01"
+ else:
+ print("Invalid Input! Please enter only 0 and 1.")
+ exit()
+print("\nOriginal Binary Data :", binary_data)
+print("Manchester Encoded Data:", encoded_data)
+Output:
+Enter Binary Data: 11001
+Original Binary Data : 11001
+Manchester Encoded Data: 0101101001
+Result: The Python program was successfully executed, and the input binary data was converted
+into Manchester encoded format according to the IEEE 802.3 standard.
+2

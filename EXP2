@@ -1,0 +1,76 @@
+Experiment No.: 2
+Aim: To Perform Basic Networking Commands.
+Objectives
+After completing this experiment, students will be able to:
+● Display network configuration details.
+● Test network connectivity.
+● Verify the local IP address.
+● Trace the path taken by packets.
+● Display MAC address and ARP cache.
+● Check DNS resolution and routing information.
+Software/Hardware Requirements
+● Windows 10/11 Computer
+● Command Prompt (CMD)
+● Internet Connection or Local Area Network (LAN)
+Theory
+Networking commands are built-in command-line utilities provided by operating systems such as
+Windows and Linux. They are used to configure, monitor, test, and troubleshoot computer
+networks. These commands help network administrators, engineers, and users identify
+connectivity issues, verify network configurations, monitor active connections, and diagnose
+communication problems between devices.
+A computer communicates over a network using the TCP/IP protocol suite. Each device is
+assigned a unique IP address and communicates through network devices such as switches,
+routers, and modems. Networking commands allow users to inspect these configurations and
+ensure that the network is functioning correctly.
+These commands are commonly used in:
+● Network installation and configuration
+● Troubleshooting Internet connectivity
+● Verifying IP address settings
+● Testing communication between devices
+● Monitoring network performance
+● Diagnosing routing and DNS issues
+● Checking active network connections
+Networking Commands
+11. ipconfig
+Purpose-Displays the IP configuration of the computer.
+2. ipconfig /all
+Purpose-Displays detailed network configuration.
+3. ping
+Purpose-Tests connectivity between two computers.
+4. tracert
+Purpose-Shows the route taken by packets from source to destination.
+5. hostname
+Purpose-Displays the computer name.
+6. getmac
+Purpose-Displays the MAC (Physical) Address
+7. arp -a
+Purpose-Displays the ARP (Address Resolution Protocol) cache.
+8. netstat
+Purpose-Displays active network connections.
+9. nslookup
+Purpose-Finds the IP address of a domain name.
+10. pathping
+Combines the features of ping and tracert to identify packet loss and latency.
+Syntax
+pathping google.com
+Procedure
+1. Click Start.
+2. Open Command Prompt (CMD).
+3. Type the following commands one by one:
+o ipconfig
+o ipconfig /all
+o ping google.com
+o tracert google.com
+o hostname
+o getmac
+o arp -a
+o netstat -a
+o nslookup google.com
+o route print
+4. Observe the output of each command.
+5. Record the results in the observation table.
+2Output:
+Result
+The basic networking commands were successfully executed, and their outputs were observed to
+understand network configuration, connectivity, routing, and troubleshooting.
+3

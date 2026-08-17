@@ -1,0 +1,67 @@
+Experiment No.: 1
+ Aim: To Study Various Communication Devices and Their Roles at Different Layers
+Objectives
+After completing this experiment, students will be able to:
+● Identify various networking devices.
+● Understand the working principle of each device.
+● Classify devices according to the OSI layers.
+● Differentiate between networking devices based on their functionality.
+● Understand real-world applications of networking devices.
+Apparatus / Requirements
+● Computer System
+● Internet Connection
+● Cisco Packet Tracer (Optional)
+● Networking Devices (if available)
+● LAN Cable (RJ-45)
+● Wi-Fi Router
+● Switch
+● Hub
+Theory
+Communication devices are hardware components that facilitate communication between
+computers and networks. These devices operate at different layers of the OSI Reference Model.
+Device OSI Layer Function
+Hub Physical Layer (Layer 1) Broadcasts incoming data to all connected
+devices without filtering.
+Repeater Physical Layer (Layer 1) Regenerates and amplifies weak signals to
+extend transmission distance.
+Modem Physical Layer (Layer 1) Converts digital signals into analog signals and
+vice versa for Internet connectivity.
+Switch Data Link Layer (Layer 2) Forwards data frames using MAC addresses,
+reducing collisions and improving efficiency.
+Bridge Data Link Layer (Layer 2) Connects and filters traffic between two LAN
+segments based on MAC addresses.
+Wireless Access
+Point (WAP) Data Link Layer (Layer 2) Provides wireless connectivity for devices to join
+a LAN.
+1
+Device OSI Layer Function
+Router Network Layer (Layer 3) Routes packets between different networks using
+IP addresses.
+Gateway Layers 4–7 Connects networks using different protocols and
+performs protocol conversion.
+Firewall Network/Transport Layer Filters incoming and outgoing traffic to protect
+the network from unauthorized access.
+OSI Layer Mapping
+OSI Layer Devices
+Layer 7 – Application Gateway
+Layer 6 – Presentation Gateway
+Layer 5 – Session Gateway
+Layer 4 – Transport Firewall, Gateway
+Layer 3 – Network Router
+Layer 2 – Data Link Switch, Bridge, Wireless Access Point
+Layer 1 – Physical Hub, Repeater, Modem
+Procedure-
+Study of Functions
+1. Study the working principle of:
+o Hub
+o Switch
+o Router
+o Bridge
+o Repeater
+o Modem
+2. Identify the OSI layer at which each device operates.
+3. Compare their functions.
+Result
+The communication devices were successfully studied, and their respective roles at different
+layers of the OSI model were understood.
+2

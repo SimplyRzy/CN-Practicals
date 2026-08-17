@@ -1,0 +1,86 @@
+Experiment No.: 4
+Aim: Write a program to determine the classes of IP Address (A, B, C, D, and E)
+Objectives
+After completing this experiment, students will be able to:
+● Understand IPv4 addressing.
+● Identify the different classes of IP addresses.
+● Write a Python program to determine the class of an IP address.
+● Understand the purpose of each IP address class.
+Theory
+An IP (Internet Protocol) Address is a unique logical address assigned to every device connected
+to a computer network. It allows devices to communicate with each other over a network.
+An IPv4 address consists of 32 bits, divided into four octets, each containing 8 bits. The octets
+are separated by dots (.).
+Each octet can have a value from 0 to 255.
+IP Address Classes
+IPv4 addresses are classified into five classes based on the value of the first octet.
+Class First Octet Range Default Subnet Mask Purpose
+A 1 – 126 255.0.0.0 Large networks
+B 128 – 191 255.255.0.0 Medium networks
+C 192 – 223 255.255.255.0 Small networks
+D 224 – 239 Not Applicable Multicasting
+E 240 – 255 Not Applicable Experimental
+127.x.x.x is reserved for Loopback addresses.
+0.x.x.x is reserved for Default Network.
+Classification Rules
+First Octet Class
+1 – 126 Class A
+127 Loopback (Reserved)First Octet Class
+128 – 191 Class B
+192 – 223 Class C
+224 – 239 Class D
+240 – 255 Class E
+Algorithm
+1. Start the program.
+2. Read the IPv4 address from the user.
+3. Split the address into four octets using the . separator.
+4. Convert the first octet into an integer.
+5. Determine the class based on the first octet:
+o 1–126 → Class A
+o 127 → Loopback
+o 128–191 → Class B
+o 192–223 → Class C
+o 224–239 → Class D
+o 240–255 → Class E
+6. Display the result.
+7. Stop the program.
+# Program to Determine the Class of an IP Address
+ip = input("Enter an IPv4 Address: ")
+parts = ip.split(".")
+# Check if the IP has exactly four octets
+if len(parts) != 4:
+ print("Invalid IP Address")
+ exit()
+try:
+ first_octet = int(parts[0])
+ # Validate all octets
+ valid = True
+ for part in parts:
+ num = int(part)
+ if num < 0 or num > 255:valid = False
+ break
+ if not valid:
+ print("Invalid IP Address")
+ elif 1 <= first_octet <= 126:
+ print("Class A IP Address")
+ elif first_octet == 127:
+ print("Loopback Address (Reserved)")
+ elif 128 <= first_octet <= 191:
+ print("Class B IP Address")
+ elif 192 <= first_octet <= 223:
+ print("Class C IP Address")
+ elif 224 <= first_octet <= 239:
+ print("Class D IP Address (Multicast)")
+ elif 240 <= first_octet <= 255:
+ print("Class E IP Address (Experimental)")
+ else:
+ print("Reserved or Invalid Address")
+except ValueError:
+ print("Invalid IP Address")
+Output:
+Result:
+The Python program was successfully executed, and the class of the given IPv4 address was
+correctly determined based on the first octet.
+3
+2
+1

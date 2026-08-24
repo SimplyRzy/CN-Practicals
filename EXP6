@@ -1,0 +1,31 @@
+EXPERIMENT NO 6
+Aim: Write a program to implement Character Stuffing in a frame.
+Theory:
+F Character Stuffing is a ESC FLAG technique ESC ESC Nin the Data
+Link Layer F computer networks to identify the beginning and end of a
+frame.
+In character stuffing, special characters are used to indicate the beginning and
+end of a frame.
+● FLAG → indicates start/end of frame.
+● ESC → used before FLAG or ESC appearing in the data.
+● If FLAG or ESC occurs inside the data, an ESC is inserted before it.
+Program
+def character_stuffing(data):
+FLAG = 'F'
+ESC = 'E'
+stuffed_data = FLAG
+for ch in data:
+if ch == FLAG or ch == ESC:
+stuffed_data += ESC
+stuffed_data += ch
+stuffed_data += FLAG
+return stuffed_data
+# Main program
+data = input("Enter the data/frame: ")
+stuffed_frame = character_stuffing(data)
+print("\nOriginal Data :", data)
+print("Stuffed Frame :", stuffed_frame)
+Example
+Enter the data/frame: ABFECD
+Original Data: ABFECD
+Stuffed Frame: FABEFEECD F
